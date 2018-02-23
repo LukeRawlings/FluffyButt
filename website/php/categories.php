@@ -1,12 +1,15 @@
 <?php
 	// Set up the connection
-	$conn = mysqli_connect('localhost', 'root', '', 'FluffyButtCookiesDB');
+	$conn = mysqli_connect('localhost', 'root', '');
+
+	mysqli_select_db($conn, "FluffyButtCookiesDB");
+
 	if($conn)
 	{
 		$categories = array();
 
-		//todo: get categories from database
-		$query = "SELECT * FROM Products.Categories";
+		// Get categories from database
+		$query = "SELECT * FROM Category";
 		$result = mysqli_query($conn, $query);
 		while($row = mysqli_fetch_assoc($result))
 		{
@@ -15,18 +18,19 @@
 			$categoryDescription = $row['Description'];
 			$categoryImage = $row['ImageId'];
 
-			$queryImage = "SELECT FileName FROM Media.Image WHERE ImageId = '$categoryImage'";
-			$resultImage = mysqli_query($conn, $queryImage);	
+			$imageQuery = "SELECT FileName FROM Image WHERE ImageId = '$categoryImage'";
+			$imageResult = mysqli_query($conn, $imageQuery);	
 
 			$category = array();
 			$category['name'] = $categoryName;
 			$category['description'] = $categoryDescription;
-			$category['image'] = $categoryImage;
+			if ($imageRow = mysqli_fetch_assoc($imageResult))
+				$category['image'] = $imageRow['FileName'];
 
 			$categories[$categoryId] = $category;
 		}
 
-		// assign to categories object
+		// Output json to api consumer.
 		echo json_encode($categories);
 	}
 	
