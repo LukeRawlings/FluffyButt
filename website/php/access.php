@@ -49,7 +49,7 @@
 				break;
 			case "subcategories":
 				include ("accessSubcategories.php");
-				$objects = buildSubCategories($connection);
+				$objects = buildSubcategories($connection);
 				break;
 		}
 		return $objects;

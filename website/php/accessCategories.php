@@ -44,13 +44,13 @@
 		$category = array();
 		$category['name'] = $categoryName;
 		$category['description'] = $categoryDescription;
-		$category['image'] = getImageFileName($image);
+		$category['imageFileName'] = getImageFileName($image);
 		return $category;
 	}
 
 
-	function getImageFileName($allImages){
-		if ($imageRow = mysqli_fetch_assoc($allImages))
+	function getImageFileName($image){
+		if ($imageRow = mysqli_fetch_assoc(imagemages))
 			return $imageRow['FileName'];
 	}
 

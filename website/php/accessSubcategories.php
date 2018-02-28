@@ -7,7 +7,7 @@
 	}
 
 	function getSubcategoriesFromDatabase($connection) {
-		$query = "SELECT * FROM Category";
+		$query = "SELECT * FROM SubCategory";
 		return mysqli_query($connection, $query);
 	}
 
@@ -24,8 +24,9 @@
 	function createSubcategoryFromRow($connection, $row) {
 		$subcategoryName = $row['SubcategoryName'];
 		$subcategoryDescription = $row['Description'];
+		$categoryId = $row['CategoryId'];
 		$image = getImage($connection, $row);
-		return fillSubcategoryWithParts($subcategoryName, $subcategoryDescription, $image;
+		return fillSubcategoryWithParts($subcategoryName, $subcategoryDescription, $categoryId, $image);
 	}
 
 	function getImage($connection, $row){
@@ -34,16 +35,17 @@
 		return mysqli_query($connection, $imageQuery);
 	}
 
-	function fillSubcategoryWithParts($subcategoryName, $subcategoryDescription, $image){
+	function fillSubcategoryWithParts($subcategoryName, $subcategoryDescription, $categoryId, $image){
 		$subcategory = array();
 		$subcategory['name'] = $subcategoryName;
 		$subcategory['description'] = $subcategoryDescription;
-		$subcategory['image'] = getImageFileName($image);
+		$subcategory['categoryId'] = $categoryId;
+		$subcategory['imageFileName'] = getImageFileName($image);
 		return $subcategory;
 	}
 
-	function getImageFileName($allImages){
-		if ($imageRow = mysqli_fetch_assoc($allImages))
+	function getImageFileName($image){
+		if ($imageRow = mysqli_fetch_assoc($image))
 			return $imageRow['FileName'];
 	}
 ?>
