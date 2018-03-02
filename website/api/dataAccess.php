@@ -13,6 +13,16 @@
             }
         }
 
+        static public function post($credentials){
+            $connection = self::connectToServer($credentials);	
+            if($connection)
+            {
+                self::connectToDatabase($connection, $credentials);
+                $query = self::getQuery($queries, $_POST["target"]);
+                mysqli_query($connection, $query);
+            }
+        }
+
         static private function connectToServer($credentials){
             return mysqli_connect($credentials["DB_SERVER"], $credentials["DB_USER"], $credentials["DB_PASSWORD"]);
         }

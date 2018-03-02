@@ -1,8 +1,10 @@
 <?php
 
-    include("queryParameters.php");
-
     $queries = array();
+
+    // Register queries below. If you need additional parameters, register them in queryParameters.php. 
+
+    // Get queries
 
     $queries["categories"] = 
         "SELECT CategoryId, CategoryName, c.Description, Filename as 'Image', i.Description as 'AltText' 
@@ -25,4 +27,7 @@
         inner join Product as p on pa.ProductId = p.ProductId
         where p.ProductId = '$productId'"; 
 
+
+    // Post queries
+   
 ?>
