@@ -27,7 +27,7 @@
         inner join Product as p on pa.ProductId = p.ProductId
         where p.ProductId = '$productId'"; 
 
-
+    $queries["customer"] = 
     // Post queries
    
 ?>
