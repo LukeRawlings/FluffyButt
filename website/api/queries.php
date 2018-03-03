@@ -27,7 +27,9 @@
         inner join Product as p on pa.ProductId = p.ProductId
         where p.ProductId = '$productId'"; 
 
-    $queries["customer"] = 
-    // Post queries
-   
+    $queries["product"] = 
+    "SELECT ProductId, ProductName, p.Description, Filename as 'Image', i.Description as 'AltText' 
+    FROM Product as p inner join Image as i
+    on p.ImageId = i.ImageId
+    Where P.ProductId = '$productId'";
 ?>
