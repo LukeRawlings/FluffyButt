@@ -1,0 +1,14 @@
+{
+  "name": "fluffybutt-cookies",
+  "version": "1.0.0",
+  "description": "Website for FluffyButt Cookies of Columbia, Missouri",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Dr. Zhuang's Web Programming Class (Spring, 2018)",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^5.0.1"
+  }
+}

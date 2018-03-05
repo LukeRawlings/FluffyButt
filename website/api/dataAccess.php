@@ -13,12 +13,14 @@
             }
         }
 
-        static public function post($credentials){
+        static public function post($credentials, $queries, $postdata){
             $connection = self::connectToServer($credentials);	
             if($connection)
             {
                 self::connectToDatabase($connection, $credentials);
-                $query = self::getQuery($queries, $_POST["target"]);
+                $postdata = json_decode(file_get_contents("php://input"));
+                
+                $query = self::getQuery($queries, $postdata->target);
                 mysqli_query($connection, $query);
             }
         }
@@ -32,6 +34,10 @@
         }
 
         static private function getQuery($queries, $target){
+            return $queries[$target];
+        }
+
+        static private function postQuery($queries, $target){
             return $queries[$target];
         }
 

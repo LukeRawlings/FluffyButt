@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="FluffyButtApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="site-wide/js/app.js"></script>
+</head>
+<body>
+    
+    <div ng-controller="CategoryController">
+        <div ng-repeat="product in products">
+            <div> {{ product.ProductId }}</div>
+            <div>{{ product.ProductName }}</div> 
+            <div> {{ product.Description }}</div> 
+            <div> 
+                <img src="images/products/{{ product.Image }}" title="{{ product.ProductName }}" alt="{{ product.AltText }}"/>
+            </div> 
+        </div>
+        {{error}}
+    </div>
+    
+    <script src="categories-page/category-controller.js"></script>
+
+</body>
+</html>
