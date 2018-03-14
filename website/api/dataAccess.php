@@ -18,8 +18,6 @@
             if($connection)
             {
                 self::connectToDatabase($connection, $credentials);
-                $postdata = json_decode(file_get_contents("php://input"));
-                
                 $query = self::getQuery($queries, $postdata->target);
                 mysqli_query($connection, $query);
             }
