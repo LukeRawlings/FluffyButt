@@ -1,0 +1,33 @@
+/* background colors */
+.fb-background-brown{
+	background-color: #302928;
+}
+.fb-background-gray{
+	background-color: #B0AAAA;
+}
+.fb-background-pink{
+	background-color: #B09592;
+}
+.fb-background-black{
+	background-color: #302D2D;
+}
+.fb-background-purple{
+	background-color: #7D6A68;
+}
+
+/* foreground colors */
+.fb-brown{
+	color: #302928;
+}
+.fb-gray{
+	color: #B0AAAA;
+}
+.fb-pink{
+	color: #B09592;
+}
+.fb-black{
+	color: #302D2D;
+}
+.fb-purple{
+	color: #7D6A68;
+}

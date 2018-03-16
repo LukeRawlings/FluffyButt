@@ -20,8 +20,16 @@ body {
 
 .footer-banner{
 	width: 100%;
-	background-color: brown;
+	background-color: #B09592;
 	color: white;
-
-
+}
+button.navbar-toggler{
+	background-color: white;
+	outline: none;
+	border: none;
+}
+button.navbar-toggler:active{
+	box-shadow: none;
+	outline: none;
+	border: none;
 }
