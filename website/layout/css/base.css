@@ -1,15 +1,36 @@
 /* Site-wide styles */
-html{
- margin: 0;
- padding: 0;
-}
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-size: 16px;
+	font-size: 16px;
+}
+
+header a {
+	color: white;
+	font-weight: bold;
+	
+}
+
+header a:hover {
+	color:  #B09592;
+}
+
+.main-container {
+	max-width: 64em;
+	min-width: 20em;
+	padding: 0;
+	
+}
+
+nav.navbar {
+	margin: 0;
+}
+
+.page-content{
+	background-color: antiquewhite;
 }
 
 .logo {
@@ -17,19 +38,54 @@ body {
     margin: 0 auto;
     width: 20em;
 }
+footer {
+	background-color: antiquewhite;
+	height: 12em;
+}
 
 .footer-banner{
 	width: 100%;
+	min-height: 3em;
 	background-color: #B09592;
 	color: white;
 }
 button.navbar-toggler{
+	font-size: 1.5em;
 	background-color: white;
 	outline: none;
 	border: none;
+	color: #B09592;
 }
 button.navbar-toggler:active{
-	box-shadow: none;
 	outline: none;
 	border: none;
+}
+
+.hug-left{
+	float: left;
+	margin-left: 2em;
+	margin-top: 2em;
+}
+
+.hug-right{
+	float: right;
+	margin-right: 2em;
+	margin-top: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+    .hug-left{
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+		
+	}
+	
+	.hug-right{
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-right: 0;
+	}
 }

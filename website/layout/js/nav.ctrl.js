@@ -2,7 +2,7 @@
 
     var app = angular.module('FluffyButtApp');
     
-    var CategoryController = function ($scope, $http) {
+    var NavController = function ($scope, $http) {
 
         var onError = function(reason){
             $scope.error = "Could not get categories.";
@@ -18,7 +18,7 @@
     };
 
 
-    app.controller('CategoryController', CategoryController);
+    app.controller('NavController', NavController);
 
 
 }())
