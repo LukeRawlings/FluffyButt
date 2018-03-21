@@ -31,6 +31,18 @@ $query = "create table Image
 if (mysqli_query($conn, $query))
 	echo "<p>Image table created</p>";
 
+
+$query = "create table CarouselImage
+(
+	CarouselImageId integer AUTO_INCREMENT,
+	ImageId 	integer   not null,
+	primary key (CarouselImageId),
+	foreign key (ImageId) references Image(ImageId)
+)";
+
+if (mysqli_query($conn, $query))
+	echo "<p>CarouselImage table created</p>";
+
 $query = "create table Category
 (
 	CategoryId		integer			AUTO_INCREMENT,
@@ -49,7 +61,7 @@ $query = "create table Subcategory
 	SubcategoryName	varchar(100)	not null,
 	CategoryId		integer			not null,
 	ImageId			integer			not null,
-	Color 			nvarchar(100) 	not null
+	Color 			nvarchar(100) 	not null,
 	primary key(SubcategoryId),
 	foreign key (CategoryId) references Category(CategoryId),
 	foreign key (ImageId) references Image(ImageId)

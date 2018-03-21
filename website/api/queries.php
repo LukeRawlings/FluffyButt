@@ -34,7 +34,10 @@
     $queries["admins"] = 
         "SELECT userName, userPassword from User where IsAdmin = 1";
 
-        
+    $queries["carousel"] = 
+        "SELECT c.ImageId, Filename as 'Image', i.Description as 'AltText' 
+        FROM CarouselImage AS c JOIN Image as i
+        on c.ImageId = i.ImageId";
     // Post queries
         
     $queries["addAdmin"] = 

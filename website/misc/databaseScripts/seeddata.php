@@ -28,6 +28,14 @@ Values
 if (mysqli_query($conn, $query))
 	echo "<p>Database is seeded with fake Image data.</p>";
 
+$query = "Insert into CarouselImage(ImageId)
+Values
+	(1),
+	(2),
+	(3);";
+
+if (mysqli_query($conn, $query))
+	echo "<p>Database is seeded with fake CarouselImage data.</p>";
 
 $query = "Insert into Category(CategoryName, ImageId)
 values

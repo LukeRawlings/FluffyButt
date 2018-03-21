@@ -7,3 +7,4 @@
 <script type="text/javascript" src="layout/js/app.js"></script>
 <script type="text/javascript" src="layout/js/nav.ctrl.js"></script>
 <script type="text/javascript" src="categories/js/category-ctrl.js"></script>
+<script src="layout/js/home.ctrl.js"></script>
