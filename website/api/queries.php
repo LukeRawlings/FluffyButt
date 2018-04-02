@@ -7,12 +7,12 @@
     // Get queries
 
     $queries["categories"] = 
-        "SELECT CategoryId, CategoryName, c.Description, Filename as 'Image', i.Description as 'AltText' 
+        "SELECT CategoryId, CategoryName, Filename as 'Image', i.Description as 'AltText' 
         FROM Category as c inner join Image as i
         on c.ImageId = i.ImageId"; 
 
     $queries["category"] = 
-        "SELECT CategoryId, CategoryName, c.Description, Filename as 'Image', i.Description as 'AltText' 
+        "SELECT CategoryId, CategoryName, Filename as 'Image', i.Description as 'AltText' 
         FROM Category as c inner join Image as i
         on c.ImageId = i.ImageId 
         WHERE c.categoryId = '$categoryId'"; 

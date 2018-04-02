@@ -9,7 +9,7 @@
         };
 
         var onCategoriesComplete = function(response){
-            $scope.categories = response;
+            $scope.categories = response.data;
         };
 
         $http.get("api/get?target=categories")
