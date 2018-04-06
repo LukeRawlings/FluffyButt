@@ -16,7 +16,7 @@ header a {
 }
 
 header a:hover {
-	color:  #B09592;
+	color:  #7d6a68/*#B09592*/;
 }
 
 .main-container {
@@ -24,6 +24,10 @@ header a:hover {
 	min-width: 20em;
 	padding: 0;
 	
+}
+
+navbar-nav{
+	color: black;
 }
 
 nav.navbar {
@@ -45,6 +49,7 @@ button.navbar-toggler{
 button.navbar-toggler:active{
 	outline: none;
 	border: none;
+	color: gray;
 }
 .navbar ul {
 	margin: 0;
