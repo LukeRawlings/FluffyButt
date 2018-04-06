@@ -8,6 +8,7 @@ body {
 	font-size: 16px;
 }
 
+/*header*/
 header a {
 	color: white;
 	font-weight: bold;
@@ -34,17 +35,6 @@ nav.navbar {
     margin: 0 auto;
     width: 20em;
 }
-footer {
-	background-color: antiquewhite;
-	height: 12em;
-}
-
-.footer-banner{
-	width: 100%;
-	min-height: 3em;
-	background-color: #B09592;
-	color: white;
-}
 button.navbar-toggler{
 	font-size: 1.5em;
 	background-color: white;
@@ -56,11 +46,33 @@ button.navbar-toggler:active{
 	outline: none;
 	border: none;
 }
-
 .navbar ul {
 	margin: 0;
 }
 
+.kitty {
+	position: absolute;
+	top: 2em;
+	width: 14em;
+}
+
+
+
+/*Footer*/
+footer {
+	background-color: antiquewhite;
+	height: 12em;
+}
+
+.footer-banner{
+	width: 100%;
+	min-height: 3em;
+	background-color: #B09592;
+	color: white;
+}
+
+
+/*front page*/
 .hug-left{
 	float: left;
 	margin-left: 2em;
@@ -87,13 +99,6 @@ button.navbar-toggler:active{
 	width: 100%;
 	color: white;
 }
-
-.kitty {
-	position: absolute;
-	top: 2em;
-	width: 14em;
-}
-
 
 .front-page-block {
 	margin: 0;
