@@ -61,6 +61,14 @@ button.navbar-toggler:active{
 	width: 14em;
 }
 
+/*nav*/
+.dropdown-menu{
+	width: 100%;
+}
+.navbar{
+	min-height: 0;
+	border: none;
+}
 
 
 /*Footer*/
@@ -109,7 +117,7 @@ footer {
 	margin: 0;
 	padding: 0;
 	height: 24em;
-	display: inline-block;
+	/*display: inline-block;*/
 }
 
 .left-block {
