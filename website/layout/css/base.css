@@ -100,6 +100,7 @@ footer {
 
 .fb-carousel {
 	width : 50%;
+	vertical-align: top;
 	display: inline-block;
 }
 
@@ -134,7 +135,7 @@ footer {
 
 .jumbotron {
 	width: 50%;
-	min-height: 291.33px;
+	height: inherit;
 	margin-bottom: 0;
 	display : inline-block;
 	vertical-align: top;
@@ -193,6 +194,13 @@ footer {
 
 	.kitty {
 		display: none;
+	}
+
+	.fb-carousel{
+		width:100%;
+	}
+	.jumbotron{
+		width: 100%;
 	}
 }
 
