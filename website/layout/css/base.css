@@ -86,8 +86,12 @@ footer {
 }
 
 .fb-carousel {
-	max-height : 32em;
-	overflow-y: hidden;
+	width : 50%;
+	display: inline-block;
+}
+
+.carousel-indicators li{
+	display: none;
 }
 
 .fb-carousel-image {
@@ -116,7 +120,11 @@ footer {
 }
 
 .jumbotron {
+	width: 50%;
+	min-height: 291.33px;
 	margin-bottom: 0;
+	display : inline-block;
+	vertical-align: top;
 	background-color: antiquewhite;
 }
 

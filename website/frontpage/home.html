@@ -1,20 +1,17 @@
-<div id="myCarousel" class="carousel fade fb-carousel" data-ride="carousel">
-	<ol class="carousel">
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="1"></li>
-		<li data-target="#myCarousel" data-slide-to="2"></li>
-	</ol>
-	<div class="carousel-inner">
-		<div ng-repeat="image in images" class="item" ng-class="{ active:!$index }">
-			<img ng-src="images/{{image.Image}}" class="fb-carousel-image" alt="{{image.AltText}}">
-			<div class="carousel-caption">
-				<h4>{{image.AltText}}</h4>
+<div class="critical-content">
+	<div id="myCarousel" class="carousel fade fb-carousel" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div ng-repeat="image in images" class="item" ng-class="{ active:!$index }">
+				<img ng-src="images/{{image.Image}}" class="fb-carousel-image" alt="{{image.AltText}}">
 			</div>
 		</div>
+	</div><div class="jumbotron">
+		<h2> Not your everyday sugar cookies!</h2>
+		<p>Custom decorated. Chewy and soft, made with brown sugar and cream cheese.</p>
 	</div>
 </div>
-<div class="jumbotron">
-	<h2> Not your everyday sugar cookies!</h2>
-	<p>Custom decorated. Chewy and soft, made with brown sugar and cream cheese.</p>
-</div>
-<div class="front-page-block left-block"></div><div class="front-page-block right-block fb-background-purple"></div>
