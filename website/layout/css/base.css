@@ -16,7 +16,7 @@ header a {
 }
 
 header a:hover {
-	color:  #B09592;
+	color:  #7d6a68/*#B09592*/;
 }
 
 .main-container {
@@ -24,6 +24,10 @@ header a:hover {
 	min-width: 20em;
 	padding: 0;
 	
+}
+
+navbar-nav{
+	color: black;
 }
 
 nav.navbar {
@@ -45,6 +49,7 @@ button.navbar-toggler{
 button.navbar-toggler:active{
 	outline: none;
 	border: none;
+	color: gray;
 }
 .navbar ul {
 	margin: 0;
@@ -56,6 +61,14 @@ button.navbar-toggler:active{
 	width: 14em;
 }
 
+/*nav*/
+.dropdown-menu{
+	width: 100%;
+}
+.navbar{
+	min-height: 0;
+	border: none;
+}
 
 
 /*Footer*/
@@ -108,7 +121,7 @@ footer {
 	margin: 0;
 	padding: 0;
 	height: 24em;
-	display: inline-block;
+	/*display: inline-block;*/
 }
 
 .left-block {
