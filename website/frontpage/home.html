@@ -7,7 +7,7 @@
 		</ol>
 		<div class="carousel-inner">
 			<div ng-repeat="image in images" class="item" ng-class="{ active:!$index }">
-				<img ng-src="images/{{image.Image}}" class="fb-carousel-image" alt="{{image.AltText}}">
+				<img id="{{'image-' + $index}}" ng-src="images/{{image.Image}}" class="fb-carousel-image" alt="{{image.AltText}}">
 			</div>
 		</div>
 	</div><div class="jumbotron">
@@ -16,13 +16,3 @@
 	</div>
 </div>
 
-<script>
-	$(window).onLoad = function(){
-		var image = $('.fb-carousel-image');
-		var targetHeight = image.height();
-		console.log(targetHeight);
-	};
-
-
-
-</script>

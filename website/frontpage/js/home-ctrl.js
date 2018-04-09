@@ -10,6 +10,9 @@
 
         var onImagesComplete = function(response){
             $scope.images = response.data;
+            var carousel = document.getElementById('myCarousel');
+            var height = window.getComputedStyle(carousel)['height'];
+            console.log(height);
         };
 
         $http.get("api/get?target=carousel")
