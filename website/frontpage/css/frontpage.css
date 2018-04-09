@@ -1,0 +1,99 @@
+/*front page*/
+
+/*carousel*/
+.fb-carousel {
+	width : 50%;
+	display: inline-block;
+	vertical-align:top;
+}
+
+.carousel-indicators li{
+	display: none;
+}
+
+.fb-carousel-image {
+	width: 100%;
+}
+
+.fb-dropdown-button {
+	height: 100%;
+	width: 100%;
+	color: white;
+}
+
+/*.front-page-block {
+	margin: 0;
+	padding: 0;
+	height: 24em;
+	display: inline-block;
+}
+
+.left-block {
+	width: 66.6%;
+}
+
+.right-block {
+	width: 33.3%;
+}*/
+
+.jumbotron {
+	width: 50%;
+	min-height: 291.33px;
+	margin-bottom: 0;
+	display : inline-block;
+	vertical-align: top;
+	background-color: antiquewhite;
+}
+
+.jumbotron h2 {
+	margin-top: 0;
+}
+
+.jumbotron p {
+	margin-bottom: 0;
+}
+
+.carousel.fade {
+	opacity: 1;
+}
+.carousel.fade .item {
+   transition: opacity ease-out .7s;
+   left: 0;
+   opacity: 0; /* hide all slides */
+   top: 0;
+   position: absolute;
+   width: 100%;
+   display: block;
+}
+.carousel.fade .item:first-child {
+   top: auto;
+   opacity: 1; /* show first slide */
+   position: relative;
+}
+.carousel.fade .item.active {
+   opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+	.hug-left{
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+	}
+	.hug-right{
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-right: 0;
+	}
+	.front-page-block{
+		width: 100%;
+	}
+	.fb-carousel{
+		width: 100%;
+	}
+	.jumbotron{
+		width: 100%;
+	}
+}

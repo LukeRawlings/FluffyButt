@@ -1,0 +1,26 @@
+/*header*/
+header a {
+	color: white;
+	font-weight: bold;	
+}
+
+header a:hover {
+	color:  #7d6a68/*#B09592*/;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 20em;
+}
+
+.kitty {
+	position: absolute;
+	top: 2em;
+	width: 14em;
+}
+@media only screen and (max-width: 768px) {
+	.kitty {
+		display: none;
+	}
+}

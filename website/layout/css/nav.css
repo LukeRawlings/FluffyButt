@@ -1,0 +1,33 @@
+/*nav*/
+navbar-nav{
+	color: black;
+}
+
+nav.navbar {
+	margin: 0;
+}
+
+button.navbar-toggler{
+	font-size: 1.5em;
+	background-color: white;
+	outline: none;
+	border: none;
+	color: #B09592;
+}
+button.navbar-toggler:active{
+	outline: none;
+	border: none;
+	color: gray;
+}
+.navbar ul {
+	margin: 0;
+}
+.dropdown-menu{
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+}
+.navbar{
+	min-height: 0;
+	border: none;
+}
