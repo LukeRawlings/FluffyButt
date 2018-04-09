@@ -61,7 +61,6 @@ $query = "create table Subcategory
 	SubcategoryName	varchar(100)	not null,
 	CategoryId		integer			not null,
 	ImageId			integer			not null,
-	Color 			nvarchar(100) 	not null,
 	primary key(SubcategoryId),
 	foreign key (CategoryId) references Category(CategoryId),
 	foreign key (ImageId) references Image(ImageId)

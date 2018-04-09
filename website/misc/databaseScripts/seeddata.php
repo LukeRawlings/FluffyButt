@@ -71,54 +71,23 @@ Values
 	('Rememberance', 2, 7),
 	('General', 4, 7),
 	('Thinking of You', 5, 7),
-	('New Years Eve', 9, 7),
-	('Valentine's Day, 9, 7),
+	('New Year''s Eve', 9, 7),
+	('Valentine''s Day', 9, 7),
 	('Mardi Gras Day', 9, 7),
-	('St. Patrick's Day', 9, 7),
+	('St. Patrick''s Day', 9, 7),
 	('Easter', 9, 7),
 	('July 4th', 9, 7),
 	('Memorial Day', 9, 7),
-	('Mother's Day, 9, 7),
-	('Father's Day, 9, 7),
-	('Teachers Appreciation', 10, 7),
-	('Boss's Day, 10, 7),
+	('Mother''s Day', 9, 7),
+	('Father''s Day', 9, 7),
+	('Teacher Appreciation', 10, 7),
+	('Bosses Day', 10, 7),
 	('Administration Appreciation', 10, 7),
 	('Nurse Appreciation', 10, 7),
 	('Graduation', 10, 7);";
 
 if (mysqli_query($conn, $query))
 	echo "<p>Database is seeded with fake Subcategory data.</p>";
-
-$query = "Insert into Attribute(AttributeName)
-Values 
-	('Color'),
-	('Text');";
-
-if (mysqli_query($conn, $query))
-	echo "<p>Database is seeded with fake Attribute data.</p>";
-
-$query = "Insert into Product (ProductName, Description, Price, ImageId, SubcategoryId)
-Values 
-	('RedNose', 'Rudolph', 12.00, 5, 1),
-	('Santa', 'Santa', 45.00, 6, 2),
-	('Toys', 'Toys', 25.00, 7, 3),
-	('Confetti', 'Confetti', 30.00, 8, 4);";
-
-if (mysqli_query($conn, $query))
-	echo "<p>Database is seeded with fake Product data.</p>";
-
-$query = "insert into ProductAttribute(ProductId, AttributeId)
-values (1, 1), 
-	   (1, 2),
-	   (2, 1),
-	   (2, 2),
-	   (3, 1), 
-	   (3, 2),
-	   (4, 1),
-	   (4, 2);";
-	  
-if (mysqli_query($conn, $query))
-	echo "<p>Database is seeded with fake ProductAttribute data.</p>";
 
 mysqli_close($conn);
 ?>
