@@ -7,7 +7,7 @@
 		</ol>
 		<div class="carousel-inner">
 			<div ng-repeat="image in images" class="item" ng-class="{ active:!$index }">
-				<img id="{{'image-' + $index}}" ng-src="images/{{image.Image}}" class="fb-carousel-image" alt="{{image.AltText}}">
+				<img ng-src="images/{{image.filename}}" class="fb-carousel-image" alt="{{image.altText}}">
 			</div>
 		</div>
 	</div><div class="jumbotron">

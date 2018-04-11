@@ -39,16 +39,16 @@ if (mysqli_query($conn, $query))
 
 $query = "Insert into Category(CategoryName, ImageId)
 values
-	('Birthday', 1),
-	('Rememberance', 2),
-	('Shower', 1),
-	('Thank You', 2),
-	('Thinking of You', 1),
-	('Wedding', 2),
-	('Bacherlorette', 1),
-	('Get Well', 2),
-	('Holiday', 1),
-	('Special Days', 2);";
+	('Birthday'),
+	('Rememberance'),
+	('Shower'),
+	('Thank You'),
+	('Thinking of You'),
+	('Wedding'),
+	('Bacherlorette'),
+	('Get Well'),
+	('Holiday'),
+	('Special Days');";
 
 if (mysqli_query($conn, $query))
 	echo "<p>Database is seeded with fake Category data.</p>";
@@ -56,35 +56,35 @@ if (mysqli_query($conn, $query))
 
 $query = "Insert into Subcategory(SubcategoryName, CategoryId, ImageId)
 Values
-	('Girl Birthday', 1, 5),
-	('Boy Birthday', 1, 6),
-	('Adult Female Birthday', 1, 7),
-	('Adult Male Birthday', 1, 8),
-	('MileStone Birthday', 1, 5),
-	('Baby Shower', 3, 6),
-	('Bridal Shower', 3, 7),
-	('Gender Reveal', 3, 8),
-	('Wedding', 6, 5),
-	('Will you be my...', 6, 6),
-	('Fun', 7, 7),
-	('Adult Themed', 7, 8),
-	('Rememberance', 2, 7),
-	('General', 4, 7),
-	('Thinking of You', 5, 7),
-	('New Year''s Eve', 9, 7),
-	('Valentine''s Day', 9, 7),
-	('Mardi Gras Day', 9, 7),
-	('St. Patrick''s Day', 9, 7),
-	('Easter', 9, 7),
-	('July 4th', 9, 7),
-	('Memorial Day', 9, 7),
-	('Mother''s Day', 9, 7),
-	('Father''s Day', 9, 7),
-	('Teacher Appreciation', 10, 7),
-	('Bosses Day', 10, 7),
-	('Administration Appreciation', 10, 7),
-	('Nurse Appreciation', 10, 7),
-	('Graduation', 10, 7);";
+	('Girl Birthday', 1),
+	('Boy Birthday', 1),
+	('Adult Female Birthday', 1),
+	('Adult Male Birthday', 1),
+	('MileStone Birthday', 1),
+	('Baby Shower', 3),
+	('Bridal Shower', 3),
+	('Gender Reveal', 3),
+	('Wedding', 6),
+	('Will you be my...', 6),
+	('Fun', 7),
+	('Adult Themed', 7),
+	('Rememberance', 2),
+	('General', 4),
+	('Thinking of You', 5),
+	('New Year''s Eve', 9),
+	('Valentine''s Day', 9),
+	('Mardi Gras Day', 9),
+	('St. Patrick''s Day', 9),
+	('Easter', 9),
+	('July 4th', 9),
+	('Memorial Day', 9),
+	('Mother''s Day', 9),
+	('Father''s Day', 9),
+	('Teacher Appreciation', 10),
+	('Bosses Day', 10),
+	('Administration Appreciation', 10),
+	('Nurse Appreciation', 10),
+	('Graduation', 10);";
 
 if (mysqli_query($conn, $query))
 	echo "<p>Database is seeded with fake Subcategory data.</p>";

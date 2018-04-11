@@ -7,6 +7,10 @@
                 templateUrl : "frontpage/home.html",
                 controller : "HomeController"
             })
+            .when("/orderCookies", {
+            	templateUrl : "order/orderCookies.html",
+            	controller : "CookiesController"
+            })
             .otherwise({redirectTo: "/"});
     });
 }());

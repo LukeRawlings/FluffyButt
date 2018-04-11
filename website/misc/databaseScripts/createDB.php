@@ -31,25 +31,11 @@ $query = "create table Image
 if (mysqli_query($conn, $query))
 	echo "<p>Image table created</p>";
 
-
-$query = "create table CarouselImage
-(
-	CarouselImageId integer AUTO_INCREMENT,
-	ImageId 	integer   not null,
-	primary key (CarouselImageId),
-	foreign key (ImageId) references Image(ImageId)
-)";
-
-if (mysqli_query($conn, $query))
-	echo "<p>CarouselImage table created</p>";
-
 $query = "create table Category
 (
 	CategoryId		integer			AUTO_INCREMENT,
 	CategoryName	varchar(1000)	not null,
-	ImageId			integer			not null,
 	primary key	(CategoryId),
-	foreign key (ImageId) references Image(ImageId)
 )";
 
 if (mysqli_query($conn, $query))
@@ -60,27 +46,12 @@ $query = "create table Subcategory
 	SubcategoryId	integer			AUTO_INCREMENT,
 	SubcategoryName	varchar(100)	not null,
 	CategoryId		integer			not null,
-	ImageId			integer			not null,
 	primary key(SubcategoryId),
 	foreign key (CategoryId) references Category(CategoryId),
-	foreign key (ImageId) references Image(ImageId)
 );";
 
 if (mysqli_query($conn, $query))
 	echo "<p>SubCategory table created</p>";
-
-$query = "create table User
-(
-	UserId			integer			AUTO_INCREMENT,
-	UserName		varchar(100)	not null,
-	UserPassword	varchar(10)		not null,
-	IsAdmin			tinyint(1)		not null,
-	primary key(UserId)
-);";
-
-if (mysqli_query($conn, $query))
-	echo "<p>User table created</p>";
-
 
 mysqli_close($conn);
 ?>
