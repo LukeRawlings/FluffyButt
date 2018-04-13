@@ -11,6 +11,5 @@
     
     // Post parameters ex: $postdata->username;
     
-    $username = $postdata->username;
-    $password = $postdata->password;
+ 
 ?>

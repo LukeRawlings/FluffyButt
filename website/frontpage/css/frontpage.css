@@ -1,14 +1,34 @@
 /*front page*/
 
 /*carousel*/
-.fb-carousel {
-	width : 50%;
-	display: inline-block;
-	vertical-align:top;
+
+.jumbo-text {
+	font-weight: 600;
+	font-size: 3.5em;
 }
 
-.carousel-indicators li{
-	display: none;
+.carousel {
+	max-height: 32em;
+	overflow: hidden;
+}
+
+.indicator-center-help{
+	position: absolute;
+	bottom: 0;
+	left: 43.5%;
+}
+
+.carousel-indicators {
+	background-color: rgba(0, 0, 0, .5);
+	width: 9em;
+	height: 3em;
+	left: -50%;
+}
+.carousel-indicators li, .carousel-indicators li.active{
+	width: 2em;
+	height: 2em;
+	border-radius: 2em;
+	margin-top: .5em;
 }
 
 .fb-carousel-image {
@@ -21,36 +41,14 @@
 	color: white;
 }
 
-/*.front-page-block {
-	margin: 0;
-	padding: 0;
-	height: 24em;
-	display: inline-block;
-}
-
-.left-block {
-	width: 66.6%;
-}
-
-.right-block {
-	width: 33.3%;
-}*/
-
 .jumbotron {
-	width: 50%;
-	min-height: 291.33px;
 	margin-bottom: 0;
-	display : inline-block;
-	vertical-align: top;
 	background-color: antiquewhite;
+	padding-top: 3em;
 }
 
 .jumbotron h2 {
 	margin-top: 0;
-}
-
-.jumbotron p {
-	margin-bottom: 0;
 }
 
 .carousel.fade {
@@ -87,13 +85,29 @@
 		text-align: center;
 		margin-right: 0;
 	}
-	.front-page-block{
-		width: 100%;
-	}
+	
 	.fb-carousel{
-		width: 100%;
+		max-height: 20em;
 	}
+
 	.jumbotron{
 		width: 100%;
+	}
+
+	.jumbo-text {
+		font-size: 2.5em;
+	}
+
+	.carousel-indicators {
+		background-color: rgba(0, 0, 0, .5);
+		margin: 0;
+		width: 7em;
+		height: 2.5em;
+	}
+
+	.carousel-indicators li, .carousel-indicators li.active{
+		width: 1.5em;
+		height: 1.5em;
+		border-radius: 1.5em;
 	}
 }

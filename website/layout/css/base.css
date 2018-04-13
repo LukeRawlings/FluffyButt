@@ -9,30 +9,11 @@ body {
 }
 
 .main-container {
-	max-width: 64em;
+	max-width: 80em;
 	min-width: 20em;
-	padding: 0;
 }
 
-@media only screen and (max-width: 768px) {
-/*    .hug-left{
-		display: block;
-		width: 100%;
-		text-align: center;
-		margin-left: 0;	
-	}
-	
-	.hug-right{
-		display: block;
-		width: 100%;
-		text-align: center;
-		margin-right: 0;
-	}
-
-	.front-page-block {
-		width: 100%
-	}*/
-
+@media only screen and (max-width: 868px) {
 	.kitty {
 		display: none;
 	}

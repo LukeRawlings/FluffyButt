@@ -3,8 +3,17 @@ navbar-nav{
 	color: black;
 }
 
+.navbar-toggler {
+	margin-top: .25em;
+	margin-bottom: .5em;
+}
+
 nav.navbar {
 	margin: 0;
+}
+
+.nav-item {
+	font-size: 1.5em;
 }
 
 button.navbar-toggler{
@@ -30,4 +39,24 @@ button.navbar-toggler:active{
 .navbar{
 	min-height: 0;
 	border: none;
+}
+
+.rounded-left {
+	border-radius: .5em 0 0 0;
+}
+
+.rounded-right{
+	border-radius: 0 .5em 0 0;
+}
+
+@media only screen and (max-width: 968px) {
+	.nav-item {
+		font-size: 1.25em;
+	}
+}
+
+@media only screen and (max-width: 868px) {
+	.nav-item {
+		font-size: 1em;
+	}
 }

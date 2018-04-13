@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-</head>
-<head>
-<html>
-<meta charset="utf-8">
-<title>Create a Database</title>
-
-<body> 
 <?php
 	$conn = mysqli_connect('localhost', 'root', '');
 if($conn)
@@ -14,30 +6,7 @@ if($conn)
 
 mysqli_select_db($conn, "FluffyButtCookiesDB");
 
-$query = "Insert into Image(Description, FileName)
-Values
-	('Red nose reigndeer', 'Rednose.jpg'),
-	('Santa Hat', 'RedHat.jpg'), 
-	('A teddybear', 'Teddy.jpg'), 
-	('Red ribbons', 'Ribbon.jpg'),
-	('Deer', 'Rudolph.jpg'),
-	('Santa', 'Santa.jpg'),
-	('toys', 'Toys.jpg'),
-	('Confetti', 'Confetti.jpg');";
-
-if (mysqli_query($conn, $query))
-	echo "<p>Database is seeded with fake Image data.</p>";
-
-$query = "Insert into CarouselImage(ImageId)
-Values
-	(1),
-	(2),
-	(3);";
-
-if (mysqli_query($conn, $query))
-	echo "<p>Database is seeded with fake CarouselImage data.</p>";
-
-$query = "Insert into Category(CategoryName, ImageId)
+$query = "Insert into Category(CategoryName)
 values
 	('Birthday'),
 	('Rememberance'),
@@ -54,7 +23,7 @@ if (mysqli_query($conn, $query))
 	echo "<p>Database is seeded with fake Category data.</p>";
 	
 
-$query = "Insert into Subcategory(SubcategoryName, CategoryId, ImageId)
+$query = "Insert into Subcategory(SubcategoryName, CategoryId)
 Values
 	('Girl Birthday', 1),
 	('Boy Birthday', 1),
@@ -91,5 +60,3 @@ if (mysqli_query($conn, $query))
 
 mysqli_close($conn);
 ?>
-
-</body>

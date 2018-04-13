@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-</head>
-<head>
-<html>
-<meta charset="utf-8">
-<title>Create a Database</title>
-
-<body> 
 <?php
 	$conn = mysqli_connect('localhost', 'root', '');
 if($conn)
@@ -20,22 +12,11 @@ if(mysqli_query($conn, $query))
 
 mysqli_select_db($conn, "FluffyButtCookiesDB");
 
-$query = "create table Image
-(
-	ImageId 	integer 		AUTO_INCREMENT,
-	Description	varchar(1000)	not null,
-	FileName 	varchar(1000) 	not null,
-	primary key	(ImageId)
-)";
-
-if (mysqli_query($conn, $query))
-	echo "<p>Image table created</p>";
-
 $query = "create table Category
 (
 	CategoryId		integer			AUTO_INCREMENT,
-	CategoryName	varchar(1000)	not null,
-	primary key	(CategoryId),
+	CategoryName	varchar(100)	not null,
+	primary key	(CategoryId)
 )";
 
 if (mysqli_query($conn, $query))
@@ -47,7 +28,7 @@ $query = "create table Subcategory
 	SubcategoryName	varchar(100)	not null,
 	CategoryId		integer			not null,
 	primary key(SubcategoryId),
-	foreign key (CategoryId) references Category(CategoryId),
+	foreign key (CategoryId) references Category(CategoryId)
 );";
 
 if (mysqli_query($conn, $query))
@@ -55,5 +36,3 @@ if (mysqli_query($conn, $query))
 
 mysqli_close($conn);
 ?>
-
-</body>
