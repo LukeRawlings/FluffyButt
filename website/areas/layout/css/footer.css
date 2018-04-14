@@ -1,0 +1,43 @@
+footer {
+	background-color: antiquewhite;
+	height: 12em;
+}
+
+.footer-banner{
+	width: 100%;
+	min-height: 3em;
+	background-color: #B09592;
+	color: white;
+}
+
+.hug {
+	margin-top: 2em;
+}
+
+.hug-left{
+	float: left;
+	margin-left: 2em;
+	
+}
+
+.hug-right {
+	float: right;
+	margin-right: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+
+   .hug {
+	   display: block;
+	   width: 100%;
+	   text-align: center;
+   }
+
+   .hug-left{
+		margin-left: 0;	
+	}
+	
+	.hug-right{
+		margin-right: 0;
+	}
+}

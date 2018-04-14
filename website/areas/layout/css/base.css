@@ -1,0 +1,14 @@
+/* Site-wide styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-size: 16px;
+}
+
+.main-container {
+	max-width: 72em;
+	min-width: 20em;
+}

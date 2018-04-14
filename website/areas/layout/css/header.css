@@ -1,0 +1,16 @@
+.kitty {
+	position: absolute;
+	width: 14em;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 20em;
+}
+
+@media only screen and (max-width: 802px) {
+	.kitty {
+		display: none;
+	}
+}

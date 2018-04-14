@@ -1,0 +1,94 @@
+/*front page*/
+
+.carousel {
+	max-height: 26em;
+	overflow: hidden;
+}
+
+.carousel.fade {
+	opacity: 1;
+}
+
+.carousel.fade .item {
+	transition: opacity ease-out .7s;
+	left: 0;
+	opacity: 0; /* hide all slides */
+	top: 0;
+	position: absolute;
+	width: 100%;
+	display: block;
+ }
+ 
+ .carousel.fade .item.active {
+	 opacity: 1;
+  }
+  
+ .carousel.fade .item:first-child {
+	top: auto;
+	opacity: 1; /* show first slide */
+	position: relative;
+ }
+
+ .carousel-indicators {
+	background-color: rgba(0, 0, 0, .5);
+	width: 6em;
+	height: 2em;
+}
+
+.carousel-indicators li, .carousel-indicators li.active{
+	width: 1em;
+	height: 1em;
+	border-radius: 1em;
+	margin: .5em .25em .25em .25em;
+}
+
+.fb-carousel-image {
+	width: 100%;
+}
+
+.fb-dropdown-button {
+	height: 100%;
+	width: 100%;
+	color: white;
+}
+
+.indicator-center-help{
+	position: absolute;
+	bottom: 0;
+	left: 43.5%;
+}
+
+.jumbo-text {
+	font-weight: 600;
+	font-size: 3em;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+	background-color: antiquewhite;
+	padding-top: 3em;
+}
+
+.jumbotron h2 {
+	margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.carousel {
+		max-height: 18em;
+	}
+
+	.jumbo-text {
+		font-size: 2.5em;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+	
+	.carousel {
+		max-height: 12em;
+	}
+
+}

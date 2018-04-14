@@ -1,0 +1,77 @@
+button.navbar-toggler{
+	font-size: 1.5em;
+	background-color: white;
+	outline: none;
+	border: none;
+	color: #7d6a68;
+}
+
+button.navbar-toggler:active{
+	outline: none;
+	border: none;
+	color: #B09592;
+}
+
+.dropdown-menu {
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+}
+
+.nav-item {
+	font-size: 1.5em;
+}
+
+nav a {
+	color: white;
+	font-weight: 600;	
+}
+
+nav a:hover, nav a:focus {
+	color:  #7d6a68;
+}
+
+.navbar-toggler {
+	margin-top: .25em;
+	margin-bottom: .5em;
+}
+
+.navbar {
+	margin: 0;
+}
+
+.navbar ul {
+	margin: 0;
+}
+
+.navbar {
+	min-height: 0;
+	border: none;
+}
+
+.rounded-left, .rounded-left:hover  {
+	border-radius: .5em 0 0 0;
+}
+
+.rounded-right, .rounded-right:hover {
+	border-radius: 0 .5em 0 0;
+}
+
+@media only screen and (max-width: 1168px) {
+	.nav-item {
+		font-size: 1.10em;
+	}
+}
+
+@media only screen and (max-width: 1068px) {
+	.nav-item {
+		font-size: 1.05em;
+	}
+}
+
+@media only screen and (max-width: 968px) {
+	.nav-item {
+		font-size: 1em;
+	}
+}
+

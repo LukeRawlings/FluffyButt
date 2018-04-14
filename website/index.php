@@ -5,15 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Fluffybutt Cookies</title>
 <?php
-	include("layout/includes/links.html");
-	include("layout/includes/scripts.html");
+	include("areas/layout/html/links.html");
+	include("areas/layout/html/scripts.html");
 ?>
 </head>
 <body ng-app="FluffyButtApp">
 	<div class="container-fluid main-container">
-		<?php include("layout/includes/header.php");?>
+		<?php include("areas/layout/html/header.php");?>
 		<div class="page-content" ng-view></div>
-		<?php include("layout/includes/footer.php");?>
+		<?php include("areas/layout/html/footer.php");?>
 	</div>
 </body>
 </html>
