@@ -30,6 +30,7 @@
  }
 
  .carousel-indicators {
+	border-radius: 1em;
 	background-color: rgba(0, 0, 0, .5);
 	width: 6em;
 	height: 2em;
