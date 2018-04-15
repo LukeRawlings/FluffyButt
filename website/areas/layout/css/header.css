@@ -9,8 +9,14 @@
     width: 20em;
 }
 
-@media only screen and (max-width: 802px) {
+@media only screen and (max-width: 50em) {
 	.kitty {
 		display: none;
+	}
+}
+
+@media only screen and (max-width: 24em) {
+	.logo {
+		width: 15em;
 	}
 }
