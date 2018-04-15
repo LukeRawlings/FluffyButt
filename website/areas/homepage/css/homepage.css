@@ -58,6 +58,13 @@
 	color: white;
 }
 
+.container{
+	background-color: antiquewhite;
+	min-height: 291.33px;
+	width: 100%;
+	text-align: center;
+}
+
 .jumbo-text {
 	font-weight: 600;
 	font-size: 3em;
@@ -72,6 +79,26 @@
 .jumbotron h2 {
 	margin-top: 0;
 }
+
+.dividerbar{
+	width: 100%;
+	height: 40px;
+	background-color: #B09592;
+}
+
+.row > div {
+    margin-top:10px;
+    padding: 20px;
+    outline: 2px solid #ccc;
+    outline-offset: -10px;
+    -moz-outline-radius: 10px;
+	-webkit-outline-radius: 10px;
+	height: 268px;
+ }
+
+ .Kitty_FrontPage{
+	 height: 50%;
+ }
 
 @media only screen and (max-width: 56em) {
 	
