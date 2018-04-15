@@ -49,12 +49,16 @@ nav a:hover, nav a:focus {
 	border: none;
 }
 
+.rounded:hover, .rounded:active, .rounded:focus {
+	background-color: #eee;
+}
+
 .rounded-left, .rounded-left:hover  {
-	border-radius: .5em 0 0 0;
+	border-radius: 1em 0 0 0;
 }
 
 .rounded-right, .rounded-right:hover {
-	border-radius: 0 .5em 0 0;
+	border-radius: 0 1em 0 0;
 }
 
 @media only screen and (max-width: 1168px) {

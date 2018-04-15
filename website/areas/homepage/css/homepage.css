@@ -32,8 +32,13 @@
  .carousel-indicators {
 	border-radius: 1em;
 	background-color: rgba(0, 0, 0, .5);
+	position: absolute;
+	bottom: 1em;
+	left: 50%;
+	transform: translate(-50%, 0);
 	width: 6em;
-	height: 2em;
+	height: 2em; 
+	margin-left: unset;
 }
 
 .carousel-indicators li, .carousel-indicators li.active{
@@ -58,12 +63,6 @@
 	min-height: 291.33px;
 	width: 100%;
 	text-align: center;
-}
-
-.indicator-center-help{
-	position: absolute;
-	bottom: 0;
-	left: 43.5%;
 }
 
 .jumbo-text {
@@ -101,7 +100,7 @@
 	 height: 50%;
  }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 56em) {
 	
 	.carousel {
 		max-height: 18em;
@@ -113,10 +112,14 @@
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 24em) {
 	
 	.carousel {
 		max-height: 12em;
+	}
+
+	.jumbo-text {
+		font-size: 2em;
 	}
 
 }
