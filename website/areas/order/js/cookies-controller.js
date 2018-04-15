@@ -2,17 +2,14 @@
 
     var app = angular.module('FluffyButtApp');
     
-    var CookiesController = function ($scope, $http) {
+    var CookiesController = function ($scope, cookieDataService) {
 
-        $scope.cookieCanvas = new CookieCanvas();
-        
-        $scope.drawRandom = function(){
-            var randX = Math.random() * $scope.cookieCanvas.canvas.width;
-            var randY = Math.random() * $scope.cookieCanvas.canvas.height;
-            $scope.cookieCanvas.brush.stroke({X: randX, Y: randY});
-        }
- 
+        $scope.cookieCanvas = cookieDataService.cookieCanvas;
+        $scope.drawRandom = function() {
+            console.log($scope.cookieCanvas.brush);
+        };
     };
+
 
     app.controller('CookiesController', CookiesController);
 
