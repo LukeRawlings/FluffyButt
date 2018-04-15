@@ -2,14 +2,13 @@
     <div class="cookie-drawing">
         <canvas class="cookie-canvas"></canvas>
         <form>
-            <!-- <input type="color" ng-model="cookieCanvas.brush.color"> -->
-            <input class="jscolor" ng-model="cookieCanvas.brush.color">
+            <input type="color" ng-model="cookieCanvas.brush.color">
+            <!-- <input class="jscolor" ng-model="cookieCanvas.brush.color"> -->
             <select ng-model="cookieCanvas.brush.size">
                 <option value="1">Small</option>
                 <option value="2">Medium</option>
                 <option value="4">Large</option>
             </select>
-            <button ng-click="drawRandom()">Draw randomly</button>
         </form> 
     </div>
 </div>
