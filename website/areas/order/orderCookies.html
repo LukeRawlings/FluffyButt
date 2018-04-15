@@ -2,7 +2,8 @@
     <div class="cookie-drawing">
         <canvas class="cookie-canvas"></canvas>
         <form>
-            <input type="color" ng-model="cookieCanvas.brush.color">
+            <!-- <input type="color" ng-model="cookieCanvas.brush.color"> -->
+            <input class="jscolor" ng-model="cookieCanvas.brush.color">
             <select ng-model="cookieCanvas.brush.size">
                 <option value="1">Small</option>
                 <option value="2">Medium</option>
@@ -12,3 +13,4 @@
         </form> 
     </div>
 </div>
+<script src="areas/order/js/jscolor.min.js"></script>
