@@ -1,13 +1,49 @@
 .cookie-builder {
-    width: 50%;
     background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.canvas-td {
+    width: 40%;
+    height: 100%;
 }
 
 .cookie-canvas {
-    width: 80%;
-    display: block;
-    margin: 10 auto;
     background-color: white;
+    width: 100%;
+    vertical-align: top;
+}
+
+.tools-td {
+    width: 10%;
+    height: 100%;
+}
+
+.canvas-tools {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.canvas-tools input, select{
+    width: 100%;
+}
+
+.canvas-tools input[type=color]{
+    height: 20%;
+}
+
+.canvas-tools select{
+    height: 30%;
+}
+
+.cookie-form-td {
+    width: 50%;
+}
+
+.cookie-form {
+    background-color: purple;
 }
 
 @media only screen and (max-width: 48em) {

@@ -1,17 +1,28 @@
-<div class="cookie-builder">
-    <div class="cookie-drawing">
-        <canvas class="cookie-canvas"></canvas>
-        <form>
-            <input type="color" ng-model="brush.color">
-            <!-- <input class="jscolor" ng-model="cookieCanvas.brush.color"> -->
-            <select ng-model="brush.size">
-                <option value="4">Small</option>
-                <option value="8">Medium</option>
-                <option value="16">Large</option>
-            </select>
-            <button ng-click="cookieCanvas.clear()">Clear Drawing</button>
-        </form>
-    </div>
+<div>
+    <h1>Build Your Cookies!</h1>
+    <p>Draw Cookie (Optional)</p>
+</div>
+<table class="cookie-builder">
+    <tr>
+        <td class="canvas-td">
+            <canvas class="cookie-canvas"></canvas>
+        </td>
+        <td class="tools-td">
+            <form class="canvas-tools">
+                <input type="color" ng-model="brush.color">
+                <!-- <input class="jscolor" ng-model="cookieCanvas.brush.color"> -->
+                <select ng-model="brush.size">
+                    <option value="4">Small</option>
+                    <option value="8">Medium</option>
+                    <option value="16">Large</option>
+                </select>
+                <button ng-click="cookieCanvas.clear()">Clear Drawing</button>
+            </form>
+        </td>
+        <td class="cookie-form-td">
+            <div class="cookie-form"></div>
+        </td>
+    </tr>
 </div>
 <script src="areas/order/js/change-color-picker.js"></script>
 <script src="areas/order/js/jscolor.min.js"></script>
