@@ -10,7 +10,12 @@
         $scope.cookieCanvas.redraw();
         var canvas = $scope.cookieCanvas.canvas;
 
+        canvas.touchstart = function(event){
+            console.log(event);
+        };
+
         canvas.onmousedown = function(event){
+            console.log(event);
             var rect = canvas.getBoundingClientRect();
             var mouseX = (event.clientX - rect.left) / (rect.right - rect.left) * canvas.width;
             var mouseY = (event.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
@@ -30,6 +35,13 @@
         };
 
         canvas.onmouseup = function(event){
+            $scope.brush.painting = false;
+        };
+        canvas.onmouseout = function(event){
+            $scope.brush.painting = false;
+        };
+       
+        canvas.touchcancel = function(event){
             $scope.brush.painting = false;
         };
 
