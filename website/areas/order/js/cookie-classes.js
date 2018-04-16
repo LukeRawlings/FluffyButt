@@ -28,17 +28,20 @@ class PaintBrush{
         this.clickX = [];
         this.clickY = [];
         this.clickDrag = [];
+        this.colors = [];
+        this.sizes = [];
         this.size = "4";
+        this.color = "black";
     }
     addPoint(x, y, dragging){
         this.clickX.push(x);
         this.clickY.push(y);
         this.clickDrag.push(dragging);
+        this.colors.push(this.color);
+        this.sizes.push(this.size);
     }
     paintByIndex(i){
         this.context.beginPath();
-        this.context.strokeStyle = this.color;
-        this.context.lineWidth = this.size;  
         if(this.clickDrag[i] && i){
             this.context.moveTo(this.clickX[i-1], this.clickY[i-1]);
         }else{
@@ -46,11 +49,15 @@ class PaintBrush{
         }
         this.context.lineTo(this.clickX[i], this.clickY[i]);
         this.context.closePath();
+        this.context.strokeStyle = this.colors[i];
+        this.context.lineWidth = this.sizes[i];  
         this.context.stroke();
     }
     clean(){
         this.clickX = [];
         this.clickY = [];
         this.clickDrag = [];
+        this.colors = [];
+        this.sizes = [];
     }
 }
