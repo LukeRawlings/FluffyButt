@@ -5,26 +5,34 @@
     var CookiesController = function ($scope, cookieDataService) {
 
         $scope.cookieCanvas = cookieDataService.cookieCanvas;
+        $scope.cookieCanvas.refreshCanvas();
+        $scope.brush = $scope.cookieCanvas.brush;
+        $scope.cookieCanvas.redraw();
+        var canvas = $scope.cookieCanvas.canvas;
 
-        $scope.cookieCanvas.canvas.addEventListener('mousedown', function(event){
-           $scope.painting = true;
-        });
-        $scope.cookieCanvas.canvas.addEventListener('mouseup', function(event){
-            $scope.painting = false;
-        });
-        $scope.cookieCanvas.canvas.addEventListener('mousemove', function(event){
-           if($scope.painting)
-                paint();
-        });
-        function paint(){
-            var canvas = $scope.cookieCanvas.canvas;
+        canvas.onmousedown = function(event){
             var rect = canvas.getBoundingClientRect();
-            var position = {
-                    X : (event.clientX - rect.left) / (rect.right - rect.left) * canvas.width,
-                    Y : (event.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height
-                };
-            $scope.cookieCanvas.brush.stroke(position);
-        }
+            var mouseX = (event.clientX - rect.left) / (rect.right - rect.left) * canvas.width;
+            var mouseY = (event.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
+            $scope.brush.painting = true;
+            $scope.brush.addPoint(mouseX, mouseY);
+            $scope.cookieCanvas.redraw();
+        };
+
+        canvas.onmousemove = function(event){
+            if($scope.brush.painting){
+                var rect = canvas.getBoundingClientRect();
+                var mouseX = (event.clientX - rect.left) / (rect.right - rect.left) * canvas.width;
+                var mouseY = (event.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
+                $scope.brush.addPoint(mouseX, mouseY, true);
+                $scope.cookieCanvas.redraw();
+            }
+        };
+
+        canvas.onmouseup = function(event){
+            $scope.brush.painting = false;
+        };
+
     };
 
 

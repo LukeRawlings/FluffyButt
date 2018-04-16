@@ -1,14 +1,16 @@
 .cookie-builder {
     width: 50%;
-    background-color: hotpink;
+    background-color: black;
 }
 
 .cookie-canvas {
-    width: 75%;
+    width: 80%;
+    display: block;
+    margin: 10 auto;
     background-color: white;
 }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 48em) {
     .cookie-builder{
         width: 100%;
     }
