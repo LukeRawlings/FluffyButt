@@ -10,9 +10,12 @@
 }
 
 .cookie-canvas {
+    /*background-color: rgb(238, 202, 170);*/
     background-color: white;
     width: 100%;
     vertical-align: top;
+    border: 1px solid black;
+    touch-action: none;
 }
 
 .tools-td {
@@ -24,6 +27,7 @@
     width: 100%;
     height: 100%;
     background-color: white;
+    border: 1px 0 1px 1px solid black;
 }
 
 .canvas-tools input, select{
