@@ -44,14 +44,31 @@
 
 .cookie-form-td {
     width: 50%;
+    height: 100%;
 }
 
 .cookie-form {
-    background-color: purple;
+    background-color: green;
+    height: 100%;
 }
 
 @media only screen and (max-width: 48em) {
-    .cookie-builder{
-        width: 100%;
+    table, tbody {
+        display: block;
     }
+    td{
+        display: inline-block;
+    }
+
+    .tools-td {
+        width: 20%;
+
+    }
+    .canvas-td {
+        width: 80%;
+
+    }
+    .cookie-form-td{
+    }
+
 }
