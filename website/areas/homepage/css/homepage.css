@@ -1,7 +1,8 @@
 /*front page*/
 
+
 .carousel {
-	max-height: 26em;
+	max-height: 32em;
 	overflow: hidden;
 }
 
@@ -48,58 +49,93 @@
 	margin: .5em .25em .25em .25em;
 }
 
-.dividerbar{
-	background-color: #B09592;
-	height: 8em;
-	width: 100%;
+.contact-info {
+	margin: 1em auto;
+	width: 15em;
+}
+
+.contact-preview {
+	padding: 2em;
+	font-size: 1.25em;
+	font-weight: 600;
+	color: white;
+}
+
+.contact-preview a {
+	color: white;
 }
 
 .fb-carousel-image {
 	width: 100%;
 }
 
-.fb-dropdown-button {
-	height: 100%;
-	width: 100%;
+.floating-box {
+	background-color: orangered;
 	color: white;
+	font-size: 1.5em;
+	font-weight: bold;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: .5em;
+	pointer-events: none;
+	position: absolute;
+	bottom: 1em;
+	z-index: 100;
 }
 
-.jumbo-text {
-	font-weight: 600;
+.about-preview {
+	padding: 2em;
+	background-color: antiquewhite;
+}
+
+.about-preview h1, h2 {
+	margin: 0;
+}
+
+.about-preview h1{
 	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: .25em;
 }
 
-.jumbotron {
-	margin-bottom: 0;
-	background-color: antiquewhite;
-	padding-top: 3em;
-}
-
-.jumbotron h2 {
-	margin-top: 0;
-}
-
-.preview-inner {
+.find-us-on-facebook {
 	background-color: white;
-	padding: 1em;
-	height: 24em;
+	border-radius: .5em;
+	height: 4em;
+	width: 12.5em;
+	text-align: center;
+	padding: 1.25em;
+	margin: 2em auto;
 }
-
-.preview-inner img {
-	display: block;
-	margin: 0 auto;
-	width: 80%;
-}
-
-.preview-panel {
-	background-color: antiquewhite;
-	height: 28em;
-	padding: 2em 1.5em;
- }
 
  .row {
 	 margin-left: auto;
 	 margin-right: auto;
+ }
+
+ .order-type-preview {
+	 position: relative;
+	 margin: 2.5em auto;
+ }
+ .or {
+	 text-align: center;
+	 margin-top: 20%;
+	 font-size: 3em;
+ }
+
+ .order-type-preview img {
+	width: 100%;
+	border-radius: 1em;	
+	-webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+ }
+
+ .underline {
+	 text-decoration: underline;
  }
 
 @media only screen and (max-width: 56em) {

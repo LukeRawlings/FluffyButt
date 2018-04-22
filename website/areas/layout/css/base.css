@@ -2,12 +2,16 @@
 * {
     margin: 0;
 	padding: 0;
-	
+}
+
+html {
+	width: 100%;
 }
 
 body {
 	font-size: 16px;
 	line-height: unset !important;
+	width: 100%;
 }
 
 .container-fluid {
@@ -15,6 +19,10 @@ body {
 }
 
 .main-container {
-	min-width: 15em;
+	min-width: 20em;
 	max-width: 72em;
+}
+
+.filler-content{
+	min-height: 40em;
 }

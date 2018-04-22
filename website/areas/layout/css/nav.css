@@ -12,10 +12,28 @@ button.navbar-toggler:active{
 	color: #B09592;
 }
 
+.caret {
+	border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid white;
+}
+
 .dropdown-menu {
 	width: 100%;
 	text-align: center;
 	font-size: 1em;
+}
+
+li.dropdown:hover .caret {
+	border-top: 6px solid #7d6a68;
+}
+
+li.open a {
+	color: #7d6a68;
+}
+
+li.open .caret {
+	border-top: 6px solid #7d6a68;
 }
 
 .nav-item {
@@ -27,9 +45,10 @@ nav a {
 	font-weight: 600;	
 }
 
-nav a:hover, nav a:focus {
+nav a:hover, nav a:focus, nav a:active {
 	color:  #7d6a68;
 }
+
 
 .navbar-toggler {
 	margin-top: .25em;
@@ -48,6 +67,7 @@ nav a:hover, nav a:focus {
 	min-height: 0;
 	border: none;
 }
+
 
 .rounded:hover, .rounded:active, .rounded:focus {
 	background-color: #eee;

@@ -1,15 +1,11 @@
 footer {
 	position: relative;
-	background-color: antiquewhite;
-	height: 12em;
+	background-color:  #7D6A68;
+	height: 8em;
+	color: white;
+	font-weight: bold;
 }
 
-.footer-banner{
-	width: 100%;
-	min-height: 3em;
-	background-color: #7D6A68;
-	color: white;
-}
 
 .hug {
 	position: relative;

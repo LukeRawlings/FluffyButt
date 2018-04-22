@@ -3,9 +3,7 @@
         <li class="nav-item">
             <a class="rounded rounded-left fb-background-purple" href="./">Home</a>
         </li>
-        <li class="nav-item">
-            <a href="#!/orderCookies" class="fb-background-pink"><span class="order-cookies-text">Order Cookies!</span></a>
-        </li>
+            <?php include("cookie-dropdown.html");?>
         <li class="nav-item">
             <a class="fb-background-purple" href="#!/bijou-jars">Bijou Jars</a>
         </li>

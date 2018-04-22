@@ -7,9 +7,15 @@
                 templateUrl : 'areas/homepage/home.html',
                 controller: 'HomeController'
             })
-            .when('/orderCookies', {
-            	templateUrl : 'areas/order/orderCookies.html',
+            .when('/cookieBuilder', {
+            	templateUrl : 'areas/order/cookieBuilder.html',
             	controller : 'CookiesController'
+            })
+            .when('/customerFavorites', {
+                templateUrl : 'areas/order/customerFavorites.html'
+            })
+            .when('/cart', {
+                templateUrl : 'areas/order/cart.html'
             })
             .when('/bijou-jars', {
                 templateUrl : 'areas/bijou-jars/bijou-jars.html'

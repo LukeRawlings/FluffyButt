@@ -3,6 +3,11 @@
 	width: 14em;
 }
 
+.shopping-cart{
+	position: absolute;
+	right: 0;
+}
+
 .logo {
     display: block;
     margin: 0 auto;
