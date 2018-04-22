@@ -70,7 +70,7 @@
 }
 
 .floating-box {
-	background-color: orangered;
+	background-color: rgb(125,106,104, .75);
 	color: white;
 	font-size: 1.5em;
 	font-weight: bold;
@@ -83,6 +83,8 @@
 	position: absolute;
 	bottom: 1em;
 	z-index: 100;
+	width: 75%;
+	height: 20%;
 }
 
 .about-preview {
