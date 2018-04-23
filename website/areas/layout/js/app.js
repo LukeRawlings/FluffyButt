@@ -4,8 +4,7 @@
     app.config(function($routeProvider){
         $routeProvider
             .when('/', {
-                templateUrl : 'areas/homepage/home.html',
-                controller: 'HomeController'
+                templateUrl : 'areas/homepage/home.html'
             })
             .when('/cookieBuilder', {
             	templateUrl : 'areas/order/cookieBuilder.html',
