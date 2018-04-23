@@ -58,5 +58,30 @@ Values
 if (mysqli_query($conn, $query))
 	echo "<p>Database is seeded with fake Subcategory data.</p>";
 
+$query = "Insert into ProductCategory (ProductCategoryName)
+values 
+	('Custom Cookies'),
+	('Pre-designed Cookies'),
+	('Bijou Jars');
+";
+
+if (mysqli_query($conn, $query))
+	echo "<p>Database is seeded with ProductCategory data.</p>";
+
+
+$query = "Insert into Products(Price, Name, ImageUrl, ProductCategoryId)
+values 
+	(2.25, 'Rubber Duckies', '../images/FavoritesCookies/RubberDuckies.jpg', 2),
+	(2.25, 'Sea Cookies', '../images/FavoritesCookies/SeaCookies.jpg', 2),
+	(2.33, 'Emoji Cookies', '../images/FavoritesCookies/EmojiCookies.jpg', 2),
+	(2.50, 'Wedding Cookies', '../images/FavoritesCookies/WeddingCookies.jpg', 2),
+	(2.50, 'Rustic Cookies', '../images/FavoritesCookies/RusticCookies.jpg', 2),
+	(2.50, 'Sport Cookies', '../images/FavoritesCookies/SportsCookies.jpg', 2),
+	(2.92, 'Detailed Cookies', '../images/FavoritesCookies/DetailedCookies.jpg', 2);
+";
+
+if (mysqli_query($conn, $query))
+	echo "<p>Database is seeded with Products data.</p>";
+
 mysqli_close($conn);
 ?>

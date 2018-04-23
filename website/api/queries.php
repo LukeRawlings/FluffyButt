@@ -9,6 +9,9 @@
     $queries["categories"] = "SELECT * FROM Category"; 
 
     $queries["subcategories"] = "SELECT * FROM Subcategory";
+
+    $queries["products"] = "SELECT p.ProductId, P.Price, p.Name, p.ImageUrl, PC.ProductCategoryName FROM Products as P join ProductCategory as PC
+    on PC.ProductCategoryId = P.ProductCategoryId";
    
     // Post queries
         
