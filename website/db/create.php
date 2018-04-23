@@ -34,5 +34,31 @@ $query = "create table Subcategory
 if (mysqli_query($conn, $query))
 	echo "<p>SubCategory table created</p>";
 
+$query = "create table ProductCategory
+(
+	ProductCategoryId	integer 	AUTO_INCREMENT,
+	ProductCategoryName 		nvarchar(100)	not null,
+	Primary key (ProductCategoryId)
+);";
+
+if (mysqli_query($conn, $query))
+	echo "<p>ProductCategory table created</p>";
+
+$query = "create table Products
+(
+	ProductId	integer 	AUTO_INCREMENT,
+	Price 		decimal(6,2)	not null,
+	Name 		nvarchar(100)	not null,
+	ImageUrl 	nvarchar(100)	not null,
+	ProductCategoryId integer  not null,
+	Primary key (ProductId),
+	Foreign key (ProductCategoryId) references ProductCategory (ProductCategoryId)
+);";
+
+if (mysqli_query($conn, $query))
+	echo "<p>Products table created</p>";
+else 
+	echo"<p>Products table failed</p>";
+
 mysqli_close($conn);
 ?>
