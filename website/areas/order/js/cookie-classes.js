@@ -30,8 +30,8 @@ class PaintBrush{
         this.clickDrag = [];
         this.colors = [];
         this.sizes = [];
-        this.size = "4";
-        this.color = "black";
+        this.size = "8";
+        this.color = "#804000";
     }
     addPoint(x, y, dragging){
         this.clickX.push(x);

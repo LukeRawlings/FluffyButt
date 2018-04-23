@@ -1,1 +1,16 @@
-<div class="filler-content">Your Cart</div>
+<div>
+    <h1>Your Cart:</h1>
+    <div class="product-block" ng-repeat="product in cart.products | hasItems">
+        <h3>{{product.name}}</h3>
+        <div class="item-block" ng-repeat="item in product.items">
+            <p>{{ item.name }}</p>
+            <img src="{{item.image.src}" src="{{item.name}}"}>
+            <p>Price: {{ item.price | currency}}</p>
+            <p>Quantity: <input type="number" ng-model="item.quantity" min="1" max="1000" ng-change="cart.updateTotal()"></p>
+            <p>Subtotal: {{ item.price * item.quantity | currency}}</p>
+            <button class="btn btn-danger" ng-click="removeItem(product, item)">Remove</button>
+        </div>
+    </div>
+    <p>Total: {{cart.cartTotal | currency}}</p>
+</div>
+<a href="#!/checkout" class="btn btn-success" ng-disabled="cart.cartTotal == 0">Checkout</a>

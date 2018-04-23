@@ -1,0 +1,95 @@
+.about-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%
+}
+
+.about-text-block {
+    padding: 2em;
+    font-size: 1.5em;
+}
+
+.white-block {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-color: #ebe4d5;
+}
+
+.pink-block {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    background-color:  #B09592;
+    color: white;
+}
+
+.about-text-block h2 {
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.fluffy-cat-img {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    width: 100%;
+}
+
+.mizzou-tigers-img {
+    width: 100%;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+@media only screen and (max-width: 68em) {
+    .about-text-block h2 {
+        margin-bottom: .5em;
+        font-weight: bold;
+    }
+
+    .about-text-block {
+        padding: 1em;
+        font-size: 1.25em;
+    }
+}
+
+@media only screen and (max-width: 54em) {
+	.about-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+
+    
+    .pink-block {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    .mizzou-tigers-img {
+        width: 100%;
+        grid-row: 2 / 3;
+        padding: 3em;
+        background-color: #B09592;
+    }
+
+
+    .white-block {
+        grid-row: 3 / 4;
+    }
+
+    .fluffy-cat-img {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+        padding: 3em;
+        background-color: #ebe4d5;
+    }
+
+}
+
+@media only screen and (max-width: 32em) {
+    
+    .mizzou-tigers-img, .fluffy-cat-img {
+        width: 100%;
+        padding: 0;
+       
+    }
+}

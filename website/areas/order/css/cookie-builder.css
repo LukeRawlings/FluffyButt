@@ -1,31 +1,38 @@
+
+
 .build-your-cookies {
     text-align: center;
 }
 
+.cookie-builder, .cookie-form {
+    margin: 0 auto;
+    width: 60%;
+}
+
 .cookie-builder {
-    display: grid;
-    grid-template-columns: 40% 10% 50%;
-    grid-template-rows: 100%;
-    width: 100%;
-    height: 100%;
+   display: grid;
+   grid-template-columns: 70% 5% 25%;
+   grid-template-rows: 100%; 
 }
 
 
 .cookie-canvas {
-    border: 1px solid black;
-    background-color: white;
+    display: inline-block;
+    border-radius: 1em;
+    background-image: url('../../../images/metal.jpg');
     grid-column-start: 1;
     grid-column-end: 2;
-    width: 100%;
     touch-action: none;
+    width: 100%;
 }
 
 
 .canvas-tools {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    background-color: white;
-    border: 1px 0 1px 1px solid black;
+    display: inline-block;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    border-radius: 1em;
+    height: 100%;
 }
 
 .canvas-tools input, select{
@@ -42,24 +49,12 @@
 
 
 .cookie-form {
+    margin-top: 3em;
+    margin-bottom: 3em;
     border: 1px solid black;
-    grid-column-start: 3; 
-    grid-column-end: 4;
 }
 
 @media only screen and (max-width: 64em) {
-    .cookie-builder{
-        grid-template-columns: 80% 20%;
-        grid-template-rows: 100% 100%;
-    }
 
-
-    .cookie-form {
-        height: 100%;
-        grid-column-start: 1;
-        grid-column-end: span 2;
-        grid-row-start: 2;
-        grid-row-end: span 1;
-    }
     
 }

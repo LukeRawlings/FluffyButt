@@ -3,9 +3,22 @@
 	width: 14em;
 }
 
-.shopping-cart{
+.cart-summary {
+	text-align: center;
 	position: absolute;
+	width: 5em;
 	right: 0;
+	top: 2.75em;
+	font-size: 2.5em;
+	color:#7D6A68;
+}
+
+.cart-summary:hover, .cart-summary:focus, .cart-summary:active {
+	text-decoration: none;
+}
+
+.cart-summary:focus, .cart-summary:active{
+	color: #7D6A68;
 }
 
 .logo {
@@ -14,10 +27,30 @@
     width: 20em;
 }
 
+.money {
+	font-size: .75em;
+}
+
 @media only screen and (max-width: 50em) {
 	.kitty {
 		display: none;
 	}
+}
+
+@media only screen and (max-width: 48em) {
+	.cart-summary {
+		position: unset;
+		display: block;
+		width: 100%;
+		color: white;
+		background-color: #7D6A68;
+		padding: .25em;
+	}
+
+	.cart-summary:hover, .cart-summary:active, .cart-summary:focus {
+		color: white;
+	}
+
 }
 
 @media only screen and (max-width: 24em) {

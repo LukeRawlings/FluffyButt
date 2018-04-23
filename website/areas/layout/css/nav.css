@@ -24,6 +24,10 @@ button.navbar-toggler:active{
 	font-size: 1em;
 }
 
+li.dropdown {
+	cursor: pointer;
+}
+
 li.dropdown:hover .caret {
 	border-top: 6px solid #7d6a68;
 }
@@ -51,8 +55,8 @@ nav a:hover, nav a:focus, nav a:active {
 
 
 .navbar-toggler {
-	margin-top: .25em;
-	margin-bottom: .5em;
+	margin-top: .75em;
+	margin-bottom: .75em;
 }
 
 .navbar {

@@ -1,8 +1,40 @@
 /*front page*/
 
+.announcement {
+	font-weight: bold;
+	font-size: 1.25em;
+	z-index: 999;
+	background-color: rgba(125,106,104,.75);
+	position: absolute;
+	color: white;
+	height: 45%;
+	width: 25%;
+	bottom: 10%;
+	right: 5%;
+	padding: .75em;
+}
+
+.announcement:hover {
+	cursor: pointer;
+}
+
+.announcement a {
+	color: white;
+}
+
+.announcment a:hover, announcment a:focus {
+	text-decoration: none;
+}
+
+.announcement h3 {
+	text-decoration: underline;
+	text-align: center;
+	font-weight: bold;
+}
 
 .carousel {
-	max-height: 32em;
+	position: relative;
+	height: 32em;
 	overflow: hidden;
 }
 
@@ -70,7 +102,7 @@
 }
 
 .floating-box {
-	background-color: orangered;
+	background-color: rgb(125,106,104, .75);
 	color: white;
 	font-size: 1.5em;
 	font-weight: bold;
@@ -83,21 +115,23 @@
 	position: absolute;
 	bottom: 1em;
 	z-index: 100;
+	width: 90%;
+	height: 25%;
 }
 
 .about-preview {
 	padding: 2em;
-	background-color: antiquewhite;
+	background-color:#ebe4d5;
 }
 
 .about-preview h1, h2 {
 	margin: 0;
+	text-align: center;
 }
 
 .about-preview h1{
 	font-size: 3em;
 	font-weight: bold;
-	text-align: center;
 	margin-bottom: .25em;
 }
 
@@ -117,13 +151,9 @@
  }
 
  .order-type-preview {
+	 width: 90%;
 	 position: relative;
 	 margin: 2.5em auto;
- }
- .or {
-	 text-align: center;
-	 margin-top: 20%;
-	 font-size: 3em;
  }
 
  .order-type-preview img {
@@ -139,9 +169,8 @@
  }
 
 @media only screen and (max-width: 56em) {
-	
-	.carousel {
-		max-height: 18em;
+	.announcement {
+		display: none;
 	}
 
 	.jumbo-text {
@@ -153,11 +182,15 @@
 @media only screen and (max-width: 24em) {
 	
 	.carousel {
-		max-height: 12em;
+		height: 12em;
 	}
 
 	.jumbo-text {
 		font-size: 2em;
+	}
+
+	.order-type-preview {
+		width: 100%;
 	}
 
 }
