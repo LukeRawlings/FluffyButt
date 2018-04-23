@@ -119,13 +119,9 @@
  }
 
  .order-type-preview {
+	 width: 80%;
 	 position: relative;
 	 margin: 2.5em auto;
- }
- .or {
-	 text-align: center;
-	 margin-top: 20%;
-	 font-size: 3em;
  }
 
  .order-type-preview img {
@@ -160,6 +156,10 @@
 
 	.jumbo-text {
 		font-size: 2em;
+	}
+
+	.order-type-preview {
+		width: 100%;
 	}
 
 }

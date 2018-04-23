@@ -31,7 +31,7 @@ class PaintBrush{
         this.colors = [];
         this.sizes = [];
         this.size = "4";
-        this.color = "black";
+        this.color = "rgb(128, 64, 0)";
     }
     addPoint(x, y, dragging){
         this.clickX.push(x);

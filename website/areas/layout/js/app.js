@@ -15,7 +15,8 @@
                 templateUrl : 'areas/order/customerFavorites.html'
             })
             .when('/cart', {
-                templateUrl : 'areas/order/cart.html'
+                templateUrl : 'areas/order/cart.html',
+                controller: 'CartController'
             })
             .when('/bijou-jars', {
                 templateUrl : 'areas/bijou-jars/bijou-jars.html'
