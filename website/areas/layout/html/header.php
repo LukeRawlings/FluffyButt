@@ -1,8 +1,10 @@
 <img class="kitty" src="images/kitty.png">
 <header class="text-center">
-	<a href="./">
-		<img src="images/FluffyButt_logoText.jpg" class="logo">
-	</a>
+	<div class="logo">
+		<a href="./">
+			<img src="images/FluffyButt_logoText.jpg" class="logo">
+		</a>
+	</div>
 	<div ng-controller="CartSummaryController">
 	<a class="cart-summary"href="#!/cart">
 		<span class="glyphicon glyphicon-shopping-cart"></span>
