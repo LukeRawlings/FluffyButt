@@ -16,6 +16,15 @@
             this.cartTotal = 0;
             for (var category of this.productCategories)
                 this.cartTotal += category.products.reduce(this.sumFunc, 0);
+        },
+        findDuplicateProduct: function(product, categoryIndex){
+            
+            var products = this.productCategories[categoryIndex].products;
+            for(p of products){
+                if(p.name == product.Name){
+                    return p;
+                }
+            }
         }
       };
   

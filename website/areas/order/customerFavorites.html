@@ -1,7 +1,8 @@
 <div class="product-tile" ng-repeat="product in products | favoritesFilter">
-    <div class="product-name">
-        
-    </div>
+    <span class="product-name">{{product.Name}}</span>
+    <img src="FavoritesCookies/{{product.ImageUrl}}" alt="{{product.Name}}">
+    <span class="product-price">{{product.Price * 12 | currency}}</span>
+    <button class="btn btn-success" ng-click="addDozenToCart(product)">Add Dozen to Cart</button>
 
 
 </div>

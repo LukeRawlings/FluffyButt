@@ -13,6 +13,7 @@ app.filter('hasProducts', function () {
 
 app.filter('favoritesFilter', function () {
     return function (products) {
+        console.log(products);
         var arefavorites = [];
         for (var product of products){
             if(product.ProductCategoryName == "Pre-designed Cookies")

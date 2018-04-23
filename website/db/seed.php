@@ -71,13 +71,13 @@ if (mysqli_query($conn, $query))
 
 $query = "Insert into Products(Price, Name, ImageUrl, ProductCategoryId)
 values 
-	(2.25, 'Rubber Duckies', '../images/FavoritesCookies/RubberDuckies.jpg', 2),
-	(2.25, 'Sea Cookies', '../images/FavoritesCookies/SeaCookies.jpg', 2),
-	(2.33, 'Emoji Cookies', '../images/FavoritesCookies/EmojiCookies.jpg', 2),
-	(2.50, 'Wedding Cookies', '../images/FavoritesCookies/WeddingCookies.jpg', 2),
-	(2.50, 'Rustic Cookies', '../images/FavoritesCookies/RusticCookies.jpg', 2),
-	(2.50, 'Sport Cookies', '../images/FavoritesCookies/SportsCookies.jpg', 2),
-	(2.92, 'Detailed Cookies', '../images/FavoritesCookies/DetailedCookies.jpg', 2);
+	(2.25, 'Rubber Duckies', 'RubberDuckies.jpg', 2),
+	(2.25, 'Sea Cookies', 'SeaCookies.jpg', 2),
+	(2.33, 'Emoji Cookies', 'EmojiCookies.jpg', 2),
+	(2.50, 'Wedding Cookies', 'WeddingCookies.jpg', 2),
+	(2.50, 'Rustic Cookies', 'RusticCookies.jpg', 2),
+	(2.50, 'Sport Cookies', 'SportsCookies.jpg', 2),
+	(2.92, 'Detailed Cookies', 'DetailedCookies.jpg', 2);
 ";
 
 if (mysqli_query($conn, $query))
