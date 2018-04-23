@@ -168,9 +168,18 @@
 	 text-decoration: underline;
  }
 
+@media only screen and (max-width: 70em){
+	.floating-box {
+		font-size: 1.25em;
+	}
+}
+
  @media only screen and (max-width: 61.9375em) {
 	.order-type-preview {
 		width: 50%;
+	}
+	.floating-box {
+		font-size: 1.5em;
 	}
  }
 
@@ -190,10 +199,30 @@
 		font-size: 1.5em;
 	}
 
-	.order-type-preview {
-		width: 50%;
+	.floating-box {
+		font-size: 1.5em;
 	}
 
+}
+
+
+
+@media only screen and (max-width: 48em) {
+	.order-type-preview {
+		width: 60%;
+	}
+
+	.floating-box {
+		font-size: 1.25em;
+	}
+}
+
+
+
+@media only screen and (max-width: 32em) {
+	.order-type-preview {
+		width: 95%;
+	}
 }
 
 @media only screen and (max-width: 24em) {
@@ -214,8 +243,8 @@
 		font-size: 2em;
 	}
 
-	.order-type-preview {
-		width: 100%;
+	.floating-box {
+		font-size: 1em;
 	}
 
 }
