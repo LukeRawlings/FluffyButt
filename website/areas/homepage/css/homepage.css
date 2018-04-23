@@ -7,7 +7,7 @@
 	background-color: rgba(125,106,104,.75);
 	position: absolute;
 	color: white;
-	height: 45%;
+	height: auto;
 	width: 25%;
 	bottom: 10%;
 	right: 5%;
@@ -34,7 +34,6 @@
 
 .carousel {
 	position: relative;
-	height: 32em;
 	overflow: hidden;
 }
 
@@ -99,6 +98,7 @@
 
 .fb-carousel-image {
 	width: 100%;
+	height: auto;
 }
 
 .floating-box {
