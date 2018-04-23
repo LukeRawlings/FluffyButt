@@ -34,6 +34,7 @@
 
 .carousel {
 	position: relative;
+	height: 32em;
 	overflow: hidden;
 }
 
@@ -98,7 +99,6 @@
 
 .fb-carousel-image {
 	width: 100%;
-	height: auto;
 }
 
 .floating-box {
