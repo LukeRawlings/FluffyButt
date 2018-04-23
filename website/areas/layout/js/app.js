@@ -11,7 +11,8 @@
             	controller : 'CookiesController'
             })
             .when('/customerFavorites', {
-                templateUrl : 'areas/order/customerFavorites.html'
+                templateUrl : 'areas/order/customerFavorites.html',
+                controller : 'CustomerFavoritesController'
             })
             .when('/cart', {
                 templateUrl : 'areas/order/cart.html',

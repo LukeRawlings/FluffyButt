@@ -5,12 +5,12 @@
     var CartController = function ($scope, $window, cartService) {
         $scope.cart = cartService;
 
-        $scope.removeItem = function(product, item){
-            var confirmed = $window.confirm("Are you sure you want to remove this item?");
+        $scope.removeProduct = function(category, product){
+            var confirmed = $window.confirm("Are you sure you want to remove this product?");
             if (confirmed){
-                var idx = product.items.indexOf(item);
+                var idx = category.products.indexOf(product);
                 if (idx > -1)
-                    product.items.splice(idx, 1);  
+                    category.products.splice(idx, 1);  
                 $scope.cart.updateTotal();
             }   
         };
