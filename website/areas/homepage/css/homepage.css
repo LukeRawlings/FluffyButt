@@ -35,6 +35,7 @@
 .carousel {
 	position: relative;
 	overflow: hidden;
+	height: 32em;
 }
 
 .carousel.fade {
@@ -98,7 +99,6 @@
 
 .fb-carousel-image {
 	width: 100%;
-	height: auto;
 }
 
 .floating-box {
@@ -215,6 +215,10 @@
 	.floating-box {
 		font-size: 1.25em;
 	}
+
+	.carousel{
+		height: 20em;
+	}
 }
 
 
@@ -223,9 +227,13 @@
 	.order-type-preview {
 		width: 95%;
 	}
+
+	.carousel{
+		height: 16em;
+	}
 }
 
-@media only screen and (max-width: 24em) {
+@media only screen and (max-width: 26em) {
 
 	.about-preview h1 {
 		font-size: 2em;
@@ -234,10 +242,6 @@
 		font-size: 1.25em;
 		text-align: left;
 	}
-	
-	.carousel {
-		height: 12em;
-	}
 
 	.jumbo-text {
 		font-size: 2em;
@@ -245,6 +249,10 @@
 
 	.floating-box {
 		font-size: 1em;
+	}
+	
+	.carousel{
+		height: 12em;
 	}
 
 }
