@@ -12,7 +12,7 @@
 .white-block {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    background-color: antiquewhite;
+    background-color: #ebe4d5;
 }
 
 .pink-block {
@@ -80,7 +80,7 @@
         grid-row: 4 / 5;
         grid-column: 1 / 2;
         padding: 3em;
-        background-color: antiquewhite;
+        background-color: #ebe4d5;
     }
 
 }

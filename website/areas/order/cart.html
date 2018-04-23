@@ -6,11 +6,11 @@
             <p>{{ item.name }}</p>
             <img src="{{item.image.src}" src="{{item.name}}"}>
             <p>Price: {{ item.price | currency}}</p>
-            <p>Quantity: <input type="number" ng-model="item.quantity" min="1" ng-change="cart.updateTotal()"></p>
+            <p>Quantity: <input type="number" ng-model="item.quantity" min="1" max="1000" ng-change="cart.updateTotal()"></p>
             <p>Subtotal: {{ item.price * item.quantity | currency}}</p>
             <button class="btn btn-danger" ng-click="removeItem(product, item)">Remove</button>
         </div>
     </div>
     <p>Total: {{cart.cartTotal | currency}}</p>
 </div>
-<button class="btn btn-success" ng-disabled="cart.cartTotal == 0">Checkout</button>
+<a href="#!/checkout" class="btn btn-success" ng-disabled="cart.cartTotal == 0">Checkout</a>
