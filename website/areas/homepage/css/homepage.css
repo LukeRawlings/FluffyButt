@@ -168,6 +168,12 @@
 	 text-decoration: underline;
  }
 
+ @media only screen and (max-width: 61.9375em) {
+	.order-type-preview {
+		width: 50%;
+	}
+ }
+
 @media only screen and (max-width: 56em) {
 	.announcement {
 		display: none;
@@ -177,9 +183,28 @@
 		font-size: 2.5em;
 	}
 
+	.about-preview h1 {
+		font-size: 2.5em;
+	}
+	.about-preview h2 {
+		font-size: 1.5em;
+	}
+
+	.order-type-preview {
+		width: 50%;
+	}
+
 }
 
 @media only screen and (max-width: 24em) {
+
+	.about-preview h1 {
+		font-size: 2em;
+	}
+	.about-preview h2 {
+		font-size: 1.25em;
+		text-align: left;
+	}
 	
 	.carousel {
 		height: 12em;
