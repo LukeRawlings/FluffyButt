@@ -1,0 +1,60 @@
+.customer-favorites {
+    min-height: 48em;
+}
+
+.product-tile {
+    vertical-align: top;
+    padding: 3em;
+    width: 33.33%;
+    display: inline-block;
+    text-align: center;
+}
+
+.product-name {
+    margin: 1em 0;
+    font-size: 1em;
+    padding: .5em;
+}
+
+.image-holder {
+    height: 80%;
+    overflow: hidden;
+}
+
+.image-holder img {
+    width: 100%;
+}
+
+.product-tile .btn-success {
+    width: 75%;
+}
+
+@media only screen and (max-width: 64em) {
+    .product-tile {
+        width: 50%;
+    }
+    
+}
+
+@media only screen and (max-width: 48em) {
+    .product-tile {
+        padding: 2em;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+}
+
+@media only screen and (max-width: 36em) {
+    .product-tile {
+        padding: 1.5sem;
+    }
+}
+
+
+@media only screen and (max-width: 24em) {
+    .product-tile {
+        padding: 1em;
+    } 
+}

@@ -4,7 +4,7 @@
         <h3>{{product.name}}</h3>
         <div class="product-block" ng-repeat="product in category.products">
             <p>{{ product.name }}</p>
-            <img src="{{product.imageurl}" alt="{{product.name}}"}>
+            <img src="{{product.imageUrl}}" alt="{{product.name}}"}>
             <p>Price: {{ product.price | currency}}</p>
             <p>Quantity: <input type="number" ng-model="product.quantity" min="1" max="1000" ng-change="cart.updateTotal()"></p>
             <p>Subtotal: {{ product.price * product.quantity | currency}}</p>

@@ -9,14 +9,14 @@
         $scope.addDozenToCart = function(product){
             var favorites = $scope.cart.productCategories[1].products;
             var existing = $scope.cart.findDuplicateProduct(product, 1);
-            if(existing){
+            if(existing) {
                 existing.quantity += 12;
             }
-            else{
+            else {
                 var dozen = {name: product.Name, 
                     price: product.Price, 
                     quantity: 12, 
-                    imageUrl: product.ImageUrl};
+                    imageUrl: 'images/FavoritesCookies/' + product.ImageUrl};
                     favorites.push(dozen);
             }
                 $scope.cart.updateTotal();
@@ -30,7 +30,7 @@
             $scope.products = response.data;
         };
 
-        $http.get("api/get?target=products")
+        $http.get("api/get.php?target=products")
             .then(onProductsComplete, onProductsError)
     };
 
