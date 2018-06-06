@@ -28,3 +28,12 @@ body {
 .filler-content{
 	min-height: 40em;
 }
+
+input[type=number]{
+	height: 3em !important;
+}
+
+
+input[type=number]::-webkit-inner-spin-button {
+    height: 3em;
+}

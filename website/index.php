@@ -14,5 +14,10 @@
 		<div class="page-content" ng-view></div>
 		<?php include("areas/layout/html/footer.php");?>
 	</div>
+	<script>
+		jQuery("[type='number']").keypress(function (e) {
+			e.preventDefault();
+		});
+	</script>
 </body>
 </html>

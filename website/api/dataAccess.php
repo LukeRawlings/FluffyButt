@@ -35,9 +35,6 @@
             return $queries[$target];
         }
 
-        static private function postQuery($queries, $target){
-            return $queries[$target];
-        }
 
         static private function sendObjectsToJavascript($objects){
             echo json_encode(array_values($objects));

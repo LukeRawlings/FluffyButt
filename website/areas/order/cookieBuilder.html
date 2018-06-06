@@ -1,25 +1,40 @@
 <div class="cookie-container">
-    <h1 class="build-your-cookies">Build a cookie. Add it to your cart.</h1>
-    <div class="cookie-builder">
-        <canvas class="cookie-canvas"></canvas>
-        <form class="canvas-tools">
-            <input type="color" ng-model="brush.color">
-            <!-- <input class="jscolor" ng-model="cookieCanvas.brush.color"> -->
-            <select ng-model="brush.size">
-                <option value="4">Small</option>
-                <option value="8">Medium</option>
-                <option value="16">Large</option>
-                <option value="32">XL</option>
-            </select>
-            <button ng-click="cookieCanvas.clear()">Clear Drawing</button>
-        </form>
-    </div>
-    <div class="cookie-form">
-        <form>
-            <input type="file" />
-            <input />
-        </form>
-    </div>
+    <h1 class="build-your-cookies">Build Your Cookie</h1>
+        <div>Describe<input type="checkbox" ng-model="showDescribe" /></div>
+        <div>Upload a photo<input type="checkbox" ng-model="showUpload" /></div>
+        <div>Draw your cookie<input type="checkbox" ng-model="showDraw"/></div>
+        
+        <div ng-show="showDescribe">
+            <textarea ng-model="cookieDescription"></textarea>
+        </div>
+
+        <div ng-show="showUpload">
+            <input type="file" accept="image/*" />
+        </div>
+
+        <div class="cookie-builder" ng-show="showDraw">
+            <canvas class="cookie-canvas"></canvas>
+            <form class="canvas-tools">
+                <input type="color" ng-model="brush.color">
+                <!-- <input class="jscolor" ng-model="cookieCanvas.brush.color"> -->
+                <select ng-model="brush.size">
+                    <option value="4">Small</option>
+                    <option value="8">Medium</option>
+                    <option value="16">Large</option>
+                    <option value="32">XL</option>
+                </select>
+                <button ng-click="cookieCanvas.clear()">Clear Drawing</button>
+            </form>
+        </div>
+
+        <div>
+            <form>
+                Quantity <input type="number" />
+                <button>Add Cookie to Order</button>
+            </form>
+        </div>
+
 </div>
+
 <script src="areas/order/js/change-color-picker.js"></script>
 <script src="areas/order/js/jscolor.min.js"></script>

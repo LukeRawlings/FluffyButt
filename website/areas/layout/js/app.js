@@ -18,6 +18,10 @@
                 templateUrl : 'areas/order/cart.html',
                 controller: 'CartController'
             })
+            .when('/checkout', {
+                templateUrl : 'areas/order/checkout.html',
+                controller: 'CartController'
+            })
             .when('/bijou-jars', {
                 templateUrl : 'areas/bijou-jars/bijou-jars.html'
             })
